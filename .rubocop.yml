@@ -1,0 +1,42 @@
+AllCops:
+  NewCops: enable
+
+Metrics/BlockLength:
+  Enabled: false
+
+Style/StringLiterals:
+  Enabled: true
+  EnforcedStyle: double_quotes
+
+Style/EachWithObject:
+  Enabled: false
+
+Style/WordArray:
+  Enabled: false
+
+Lint/UnusedMethodArgument:
+  AutoCorrect: false
+
+Metrics/AbcSize:
+  Enabled: false
+
+Metrics/MethodLength:
+  Enabled: false
+
+Metrics/CyclomaticComplexity:
+  Enabled: false
+
+Metrics/PerceivedComplexity:
+  Enabled: false
+
+Style/CombinableLoops:
+  Enabled: false
+
+Style/NumericPredicate:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
