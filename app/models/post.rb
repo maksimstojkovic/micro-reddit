@@ -4,7 +4,7 @@ class Post < ApplicationRecord
 
   validates :user, presence: true
 
-  validates :title, presence: true
-  validates :link, presence: true
-  validates :body, presence: true
+  validates :title, presence: true, length: { minimum: 2, maximum: 50 }
+  validates :link, presence: true, length: { minimum: 2, maximum: 500 }
+  validates :body, presence: true, length: { minimum: 2, maximum: 2000 }
 end
