@@ -1,24 +1,30 @@
-# README
+# Micro-Reddit
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a simple Rails application which demonstrates models, associations and field validations.
 
-Things you may want to cover:
+The database schema has the following models:
 
-* Ruby version
+**User:**
 
-* System dependencies
+username:string
+email:string
+password:string
 
-* Configuration
+has_many posts
+has_many comments
 
-* Database creation
+**Post:**
 
-* Database initialization
+title:string
+link:string
+body:string
 
-* How to run the test suite
+belongs_to user
+has_many comments
 
-* Services (job queues, cache servers, search engines, etc.)
+**Comment:**
 
-* Deployment instructions
+body:string
 
-* ...
+belongs_to user
+belongs_to post
